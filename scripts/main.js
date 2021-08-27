@@ -32,7 +32,7 @@ if(!localStorage){
     setUserName();
 } else {
     let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Welcome '+storedName+'!';
+    myHeading.innerHTML = 'Welcome '+storedName+'!';
 }
 
 myButton.onclick = function(){
